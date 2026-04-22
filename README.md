@@ -1,9 +1,15 @@
 # ASPNET-DK24TTC5-NguyenTrongNghia-Website Chia sẻ công thức nấu ăn
+
 Đồ Án: Xây dựng website Chia sẻ công thức nấu ăn
+
 Thông tin sinh viên
+
 Họ và tên: Nguyễn Trọng Nghĩa
+
 MSSV: 170124508
+
 Email: nn5233460@gmail.com
+
 Số điện thoại: 0917912210
 --------------------------------
 1. Giới thiệu
