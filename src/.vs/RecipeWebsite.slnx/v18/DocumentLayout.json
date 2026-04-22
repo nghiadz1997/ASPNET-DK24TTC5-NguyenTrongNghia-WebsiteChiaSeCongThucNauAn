@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RecipeWebsite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3225D98D-3287-4000-9255-6CDEE80BA851}|RecipeWebsite\\RecipeWebsite.csproj|d:\\recipewebsite\\recipewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3225D98D-3287-4000-9255-6CDEE80BA851}|RecipeWebsite\\RecipeWebsite.csproj|solutionrelative:recipewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3225D98D-3287-4000-9255-6CDEE80BA851}|RecipeWebsite\\RecipeWebsite.csproj|D:\\RecipeWebsite\\recipewebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3225D98D-3287-4000-9255-6CDEE80BA851}|RecipeWebsite\\RecipeWebsite.csproj|solutionrelative:recipewebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\RecipeWebsite\\RecipeWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecipeWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\RecipeWebsite\\RecipeWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecipeWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T04:35:04.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\RecipeWebsite\\RecipeWebsite\\Web.config",
+              "RelativeDocumentMoniker": "RecipeWebsite\\Web.config",
+              "ToolTip": "D:\\RecipeWebsite\\RecipeWebsite\\Web.config",
+              "RelativeToolTip": "RecipeWebsite\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-19T04:34:40.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

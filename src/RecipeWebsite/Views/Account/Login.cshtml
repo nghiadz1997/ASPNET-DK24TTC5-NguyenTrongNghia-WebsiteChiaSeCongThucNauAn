@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Đăng nhập vào hệ thống</strong></h3>
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @* Token bảo mật chống tấn công CSRF, bắt buộc đi kèm với [ValidateAntiForgeryToken] ở Controller *@
+                    @Html.AntiForgeryToken()
+
+                    @* Hiển thị thông báo lỗi từ ViewBag.Error (nếu sai tài khoản/mật khẩu) *@
+                    if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="username">Tên đăng nhập</label>
+                        <div class="col-md-8">
+                            @* Thuộc tính name="username" phải khớp chính xác với tham số trong hàm Login(string username, string password) *@
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Nhập tên đăng nhập" required autofocus />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="password">Mật khẩu</label>
+                        <div class="col-md-8">
+                            @* Thuộc tính name="password" phải khớp chính xác tham số *@
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-4 col-md-8">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="glyphicon glyphicon-log-in"></i> Đăng nhập
+                            </button>
+                            <a href="@Url.Action("Register", "Account")" class="btn btn-link">Chưa có tài khoản? Đăng ký ngay</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

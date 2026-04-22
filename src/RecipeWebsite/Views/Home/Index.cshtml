@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RecipeWebsite.Models.Recipe>
+
+@{
+    ViewBag.Title = "Trang chủ - Chia sẻ công thức";
+}
+
+<div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 40px 15px; margin-bottom: 30px;">
+    <h1>Khám phá thế giới ẩm thực</h1>
+    <p class="lead">Chia sẻ và tìm kiếm những công thức nấu ăn tuyệt vời nhất từ cộng đồng.</p>
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-6 col-md-offset-3">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-inline" }))
+            {
+                <div class="input-group" style="width: 100%;">
+                    @* Ô nhập liệu, giá trị mặc định được lấy từ ViewBag.CurrentFilter *@
+                    @Html.TextBox("searchString", ViewBag.CurrentFilter as string, new { @class = "form-control input-lg", placeholder = "Tìm kiếm theo tên món ăn, danh mục..." })
+
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="glyphicon glyphicon-search"></i> Tìm
+                        </button>
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="thumbnail" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    @* Hiển thị ảnh, nếu không có ảnh thì dùng ảnh mặc định *@
+                    <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "https://via.placeholder.com/350x200?text=No+Image" : item.ImageUrl)"
+                         alt="@item.Title"
+                         style="width: 100%; height: 200px; object-fit: cover;" />
+
+                    <div class="caption">
+                        <h3 style="margin-top: 10px; font-size: 1.2em; height: 40px; overflow: hidden;">
+                            <a href="@Url.Action("Details", "Recipes", new { id = item.RecipeId })">@item.Title</a>
+                        </h3>
+
+                        <p class="text-muted" style="font-size: 0.9em;">
+                            <i class="glyphicon glyphicon-folder-open"></i> @item.Category.CategoryName <br />
+                            <i class="glyphicon glyphicon-user"></i> @item.User.Username <br />
+                            <i class="glyphicon glyphicon-time"></i> @(item.PrepTime + item.CookTime) phút
+                        </p>
+
+                        <p>
+                            <a href="@Url.Action("Details", "Recipes", new { id = item.RecipeId })" class="btn btn-primary btn-block" role="button">
+                                Xem chi tiết
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-md-12 text-center">
+            <h4>Chưa có công thức nào được chia sẻ. Hãy là người đầu tiên!</h4>
+        </div>
+    }
+</div>

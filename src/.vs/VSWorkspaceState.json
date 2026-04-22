@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\RecipeWebsite",
+    "\\RecipeWebsite\\App_Data",
+    "\\RecipeWebsite\\App_Start",
+    "\\RecipeWebsite\\Migrations",
+    "\\RecipeWebsite\\Models",
+    "\\RecipeWebsite\\Properties",
+    "\\RecipeWebsite\\Views"
+  ],
+  "SelectedNode": "\\RecipeWebsite\\Migrations\\202604010150058_InitialCreate.resx",
+  "PreviewInSolutionExplorer": false
+}

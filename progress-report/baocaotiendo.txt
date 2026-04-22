@@ -1,0 +1,19 @@
+# 10/04/2026
+Nội dung công việc: Hoàn thiện hệ thống (Giao diện, Chức năng, Cơ sở dữ liệu).
+Về Cơ sở dữ liệu:
+Hoàn thiện sơ đồ quan hệ thực thể (Database Diagram) bao gồm các bảng cốt lõi: Users, Categories, Recipes, Ingredients, Steps và Comments.
+Về Giao diện (UI/UX):
+Thiết kế giao diện dễ sử dụng, dùng thư viện Bootstrap để đảm bảo tính năng Responsive, hiển thị tốt trên cả máy tính và điện thoại di động.
+Xây dựng các trang chính: Trang chủ, Trang chi tiết công thức, Quản lý công thức, Đăng món mới, Quản lý danh mục.
+Về Chức năng:
+Hoàn thiện cho phép người dùng Đăng món ăn mới, sau đó bổ sung nguyên liệu và các bước thực hiện.
+Cơ chế xác thực người dùng bằng cách đăng nhập tài khoản và mật khẩu.
+Tích hợp chức năng tìm kiếm công thức theo từ khóa ngay tại Trang chủ.
+# 22/04/2026
+Nội dung công việc: Tổng hợp và Cập nhật hồ sơ đồ án
+Cập nhật file báo cáo Word:
+Hệ thống hóa lại toàn bộ lý thuyết về kiến trúc ASP.NET MVC, công nghệ Entity Framework và hệ quản trị SQL Server.
+Viết chi tiết chương "Hiện thực hóa nghiên cứu", mô tả bài toán và vẽ lược đồ Use Case để minh họa các tác nhân (Guest, Member) tương tác với hệ thống.
+Chụp ảnh màn hình các kết quả đạt được (Trang chủ, Quản lý công thức, Quản lý danh mục) và đưa vào báo cáo để minh chứng cho sản phẩm.
+Đánh giá các mặt đạt được và thẳng thắn nhìn nhận những hạn chế.
+Đề xuất hướng phát triển trong tương lai.
