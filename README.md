@@ -39,7 +39,5 @@ Tìm kiếm & Phân loại:
   --------------------------------
 5. Cấu trúc thư mục dự án
 * `src/`: Mã nguồn chính của Website (ASP.NET).
-* `thesis/`: Các file báo cáo và luận văn tốt nghiệp.
-* `docs/`: Tài liệu hướng dẫn và file Word (.docx).
-* `PDF/`: Các tài liệu xuất file dạng .pdf.
-* `progress-report/`: Báo cáo tiến độ hàng tuần.
+* `thesis/`: Các file báo cáo.
+* `progress-report/`: Báo cáo tiến độ.
