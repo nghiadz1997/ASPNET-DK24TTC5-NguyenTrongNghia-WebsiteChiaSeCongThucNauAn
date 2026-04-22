@@ -27,6 +27,3 @@ Quản lý công thức:
 Tìm kiếm & Phân loại:
   Tìm kiếm món ăn theo từ khóa.
   Lọc món ăn theo danh mục (Ví dụ: Thịt...).
-5. Hướng dẫn cài đặt và chạy chương trình
-  1. Clone Project
-     git clone 
